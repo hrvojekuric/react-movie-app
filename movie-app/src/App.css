@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.App {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchBox {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+    margin-top: 1rem;
+}
+
+.movieBoxApp {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    cursor: pointer;
+    max-width: 400px;
+    border: none;
+    padding: 0.1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button {
+    cursor: pointer;
+}
+
+
+@media  screen and (min-width: 400px) {
+    .movieBoxApp {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }  
+}
+
+@media  screen and (min-width: 700px) {
+    .movieBoxApp {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }  
+}
+
+@media  screen and (min-width: 1000px) {
+    .movieBoxApp {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }  
+}
+ 
